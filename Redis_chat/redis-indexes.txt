@@ -1,0 +1,15 @@
+-- Memory Index:
+FT.CREATE memories_idx ON HASH PREFIX 1 memories: SCHEMA \
+user_id TAG SEPARATOR , \
+memory_text TEXT WEIGHT 1 \
+embedding VECTOR HNSW 10 TYPE FLOAT32 DIM 768 DISTANCE_METRIC COSINE M 16 EF_CONSTRUCTION 200 \
+rfm_score NUMERIC magnitude NUMERIC frequency NUMERIC \
+created_at TEXT WEIGHT 1 last_used TEXT WEIGHT 1
+
+
+-- Chat Index:
+FT.CREATE chats_idx ON HASH PREFIX 1 chat: SCHEMA \
+user_message TEXT WEIGHT 1 \
+bot_response TEXT WEIGHT 1 \
+user_id TAG SEPARATOR , \
+timestamp TEXT WEIGHT 1
