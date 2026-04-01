@@ -1,0 +1,140 @@
+fastapi
+prometheus_fastapi_instrumentator
+fastapi[standard]
+groq
+uvicorn
+gunicorn 
+fastapi-cors
+redis[hiredis]
+redis
+python-dotenv
+supabase
+requests
+openai
+mem0ai
+uuid-utils
+pinecone
+fastapi-utils
+typing_inspect
+pytest
+modal
+cartesia
+pytz
+assemblyai
+SpeechRecognition
+deepgram-sdk
+
+boto3
+transformers
+torch
+accelerate
+
+sentencepiece
+beautifulsoup4
+newspaper3k
+selenium
+lxml[html_clean]
+google-generativeai
+
+
+langdetect
+
+google-api-python-client
+llama-index-llms-google-genai
+
+
+protobuf
+tokenizers
+gradio-client
+websockets
+
+
+
+
+
+
+
+
+
+# Your existing packages are good, add these missing ones:
+
+# For XP system and machine learning
+scikit-learn
+numpy
+# For improved HTTP requests (already using httpx, but good to have requests up to date)
+httpx
+
+# For better async support
+aiofiles
+
+
+
+# For better JSON handling
+orjson
+# For improved Redis operations (you already have redis, but ensure latest)
+redis[hiredis]
+
+# For better audio processing
+librosa
+soundfile
+
+# For improved datetime handling
+python-dateutil
+
+# For better environment variable handling
+python-decouple
+
+# For improved async database operations
+asyncpg
+
+# For better logging
+structlog
+
+# For performance monitoring
+psutil
+
+# For better error handling and debugging
+sentry-sdk
+
+# For data validation improvements
+email-validator
+
+# For better file handling
+pathlib2
+
+# Add existing packages with version updates for better compatibility:
+fastapi
+uvicorn[standard]
+pydantic
+supabase
+openai
+google-generativeai
+
+
+# For XP system database operations
+sqlalchemy
+alembic
+# For better async operations
+asyncio-throttle
+aioredis
+
+# For improved security
+cryptography
+passlib
+
+# For better API documentation
+fastapi-users
+fastapi-pagination
+
+# For monitoring and metrics
+prometheus-client
+
+
+stripe
+
+aio_pika
+pika
+google-generativeai   # This is the correct package name for Google GenAI
+hnswlib
+asyncio-throttle
+tzdata
